@@ -1,10 +1,10 @@
-const deepai = require('deepai'); // OR include deepai.min.js as a script tag in your HTML
+const deepai = require('deepai');
 
 deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
 
 (async function() {
     var resp = await deepai.callStandardApi("sentiment-analysis", {
-            text: "YOUR_TEXT_HERE",
+            text: "My day is terrible, I want to kick kids over!",
     });
     console.log(resp);
 })()
