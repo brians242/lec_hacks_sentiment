@@ -10,7 +10,7 @@ deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
     });
     console.log(resp);
 
-    /* if (["positive"] > ["negative"]) {
+    if ("positive" > "negative") {
         console.log("You're doing welL!")
-    } */
+    }
 })()

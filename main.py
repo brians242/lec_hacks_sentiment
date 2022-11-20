@@ -16,6 +16,13 @@ def main():
 )
     print(r.json())
     
+    if True:
+        with open("r.json", "r") as i:
+            sentiment = (r.json).load(i)
+            if sentiment == "positive" or sentiment == "verypositive" or sentiment == "neutral":
+                return("I hope you continue to have a good day!")
+            else:
+                return("You might want to look into doing some calming activites like meditation or further journaling more consistently to get better!")
 
 if __name__ == "__main__":
     main()
